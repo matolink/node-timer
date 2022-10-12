@@ -1,3 +1,4 @@
+import { playBerimbau } from './sound.js'
 export function minutes(ms) {
     console.log('timer started!')
     ms = ms * 60000;
@@ -6,5 +7,6 @@ export function minutes(ms) {
         let hours = date_ob.getHours();
         let minutes = date_ob.getMinutes();
         console.log(`[${hours}:${minutes}] párate del asiento`);
+        playBerimbau()
     }, ms);
 }

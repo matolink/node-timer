@@ -1,3 +1,4 @@
+import { playBerimbau } from './sound.js'
 export function pomodoro() {
   console.log('pomodoro started!')
   // let ms = 5000
@@ -9,6 +10,7 @@ export function pomodoro() {
     let hours = date_ob.getHours()
     let minutes = date_ob.getMinutes()
     console.log(`[${hours}:${minutes}] Descanso`)
+    playBerimbau()
     setTimeout(() => {
       let date_ob = new Date()
       let hours = date_ob.getHours()
